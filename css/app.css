@@ -1,0 +1,7 @@
+h1	{
+	/*with rgba a (alpha) - transparency*/
+	color: rgba(11,99,150, .1);
+}
+li {
+	color: rgba(11,99,150, 1);
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Dom">
+	<meta name="description" content="regform demo">
+	<title>Regform demo</title>
+</head>
+<body>
+	<h1>Register</h1>
+
+	<form>
+
+	<label for="fname">First name: </label><input type="text" name="fname" id="fname" placeholder="John" required />
+	<label for="lname">Last name: </label><input type="text" name="lname" id="lname" placeholder="Smith" required />
+
+	<br>
+	
+	<label for="male">Male:</label>
+	<input type="radio" name="gender" value="male" id="male"/>
+	<label for="female">Female:</label>
+	<input type="radio" name="gender" value="female" id="female"/>
+	<label for="other">Other:</label>
+	<input type="radio" name="gender" value="other" id="other"/>
+
+	<br>
+<!-- different label syntax used, where we nest the data -->
+<label>
+	Email:
+	<input type="email" name="email" required placeholder="your email" />
+</label>
+
+<label>
+	Password:
+	<!-- pattern - character lenght validation -->
+	<input type="password" name="password" required placeholder="your password" pattern=".{5,10}" title="requires 5 to 10 characters" />
+</label>
+<!-- 	<label for="email">Email:</label><input type="email" name="email" required placeholder="your email" /> 
+	<label for="password">Password:</label><input type="password" name="password" required placeholder="your password"/> -->
+
+	<br>
+<label>
+	Birthday:<select name="day">
+		<option>Day</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+			</select>
+			<select name="month">
+		<option>Month</option>
+		<option>Jan</option>
+		<option>Feb</option>
+		<option>March</option>
+			</select>
+			<select name="year">
+		<option>Year</option>
+		<option>1999</option>
+		<option>2000</option>
+		<option>2001</option>
+			</select>
+</label>
+			<br>
+			<label for="termcheck">I agree to the terms and conditions</label> 
+			<input type="checkbox" name="termcheck" id="termcheck" required />
+			<br>
+			<input type="submit" value="Submit" name="submit" />
+			</form>
+</body>
+</html>

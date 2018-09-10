@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Dom">
+	<meta name="description" content="inputs demo">
+	<title>Inputs Demo</title>
+</head>
+<body>
+
+<p>Do you prefer cats or dogs ?</p>
+
+<form>
+	<!-- by giving same name it connects them and you can only pick 1 radio button, but not both 
+	-->
+	<label for="dogs">Dogs: </label>
+	<input id="dogs" type="radio" name="petChoice" value="dog">
+
+	<label for="cats">Cats:</label>
+	<input id="cats" type="radio" name="petChoice" value="cat">	
+
+<p>What is your favorite color?</p>
+<!-- select = dropdown menu -->
+<select name="color">
+	<option value="red1">Red</option>
+	<option value="orange1">Orange</option>
+	<option value="yellow1">Yellow</option>
+</select>
+
+
+<textarea name="paragraph" rows="10" cols="50"></textarea>
+
+<button>Go!</button>
+</form>
+
+
+</body>
+</html>

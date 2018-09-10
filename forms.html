@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Dom">
+	<meta name="description" content="test forms">
+	<title>Form demo</title>
+</head>
+<body>
+	<h1>Login</h1>
+
+<!--action - where the form sends data to 
+	method - what HTTP method (get/post) -->
+
+<!-- <form action="" method="">
+<label>	Username:
+	<input name="username" type="text" name="" placeholder="username">
+</label>
+<label>	Password:
+	<input name="password" type="password" name="" placeholder="password">	
+</label>
+<input type="submit" name="">
+</form> -->
+
+<form action="http://wikipedia.org" method="">	
+	<label for="username">Email:</label>
+		<!-- 
+		placeholder is text in username and password input fields 
+		required - requires something written inside the field (doesnt work with all browsers. works with chrome)
+		-->
+	<input id="username" name="username" type="email" name="" placeholder="username" required>
+
+	<label for="password">Password:</label>
+	<input id="password" name="password" type="password" name="" placeholder="password" required>	
+
+	<input type="submit" name="">
+</form>
+
+
+
+</body>
+</html>
